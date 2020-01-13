@@ -77,8 +77,8 @@ def init_multiprocess():
 
         for output_file in executor.map(process_file, files):
             count = count + 1
-            print(f'Output file {count} of {len(files)} processes')
-    print("\ntime taken: ", time.time() - start)
+            print(f'Output file {count} of {len(files)} processed')
+    print("\nTotal time taken: ", time.time() - start)
 
 
 if __name__ == "__main__":
